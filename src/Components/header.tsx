@@ -12,15 +12,15 @@ const navLinks = [
     label: "WHO ARE WE",
   },
   {
-    href: "/highlights",
+    href: "https://www.kapilfarms.in/#highlights--nav",
     label: "HIGHLIGHTS",
   },
   {
-    href: "/projects",
+    href: "https://www.kapilfarms.in/#projects--nav",
     label: "OUR PROJECTS",
   },
   {
-    href: "/contact",
+    href: "https://www.kapilfarms.in/#contact--nav",
     label: "CONTACT US",
   },
 ];
