@@ -1,4 +1,4 @@
-// File: D:\balu\kapilfarms\LandingPages\LandingPages\kapil-farm\src\app\page.tsx
+// File: D:\kapilgurunext\farms\src\app\page.tsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
