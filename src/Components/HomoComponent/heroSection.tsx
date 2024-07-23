@@ -1,11 +1,17 @@
 "use client";
-import { useState } from 'react';
+import { useState, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
 import Image from 'next/image';
 import gif from '../../../public/assets/form_bg.gif';
 
+interface FormData {
+  name: string;
+  phonenumber: string;
+  email: string;
+}
+
 const HeroSection = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     phonenumber: '',
     email: '',
@@ -14,7 +20,7 @@ const HeroSection = () => {
   const [error, setError] = useState('');
 
   // Handle input changes
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -23,7 +29,7 @@ const HeroSection = () => {
   };
 
   // Handle form submission
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setError('');
