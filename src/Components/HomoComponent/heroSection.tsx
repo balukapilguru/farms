@@ -39,7 +39,7 @@ const HeroSection = () => {
 
     try {
       // Use a CORS proxy for development
-      const response = await axios.post('http://3.7.146.22:3030/contactform', formData);
+      const response = await axios.post('https://api.kapilfarms.in/contactform', formData);
       // Handle response if needed
       console.log('Form submitted successfully:', response.data);
       // Reset form if needed
