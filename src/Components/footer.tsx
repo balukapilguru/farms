@@ -29,22 +29,22 @@ const Footer = () => {
             </p>
             <ul className="flex gap-5 mt-2">
               <li>
-                <Link href="#">
+                <Link href="https://www.facebook.com/people/Mruganayani-by-Kapil-Farms/61556147414387/">
                   <Image src={fb} alt="fb" className="w-10" />
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="https://www.instagram.com/mruganayani_farms/">
                   <Image src={insta} alt="insta" className="w-10"/>
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="https://www.linkedin.com/company/mruganayani-farms/">
                   <Image src={ln} alt="ln" className="w-10"/>
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="https://www.youtube.com/@KapilMruganayani">
                   <Image src={yt} alt="ln" className="w-10"/>
                 </Link>
               </li>
