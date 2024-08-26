@@ -73,9 +73,16 @@ const Header = () => {
           ))}
         </ul>
       </nav>
+      <div>
+          <li class="text-[16px] lg:text-green sm:text-white sm:text-center lg:text-right md:text-right xl:text-right  sm:m-4 md:m-4 lg:m-0  td">
+            <a class="text-bold" href="tel:+91-9839837280">Call: +91-9839837280</a>
+          </li>
+          <li class="text-[16px] lg:text-green sm:text-white  sm:text-center sm:m-4 md:m-4 lg:m-0 td">
+            <a class="text-bold" href="mailto:marketing@kapilfarms.in">Email: marketing@kapilfarms.in</a>
+          </li>
+        </div>
       
-      <div><li class="text-[16px] lg:text-green sm:text-white sm:text-center lg:text-right md:text-right xl:text-right  sm:m-4 md:m-4 lg:m-0  "><a class="text-bold" href="tel:+91-9839837280">Call: +91-9839837280</a></li><li class="text-[16px] lg:text-green sm:text-white  sm:text-center sm:m-4 md:m-4 lg:m-0"><a class="text-bold" href="mailto:marketing@kapilfarms.in">Email: marketing@kapilfarms.in</a></li></div>
-    </header>
+      </header>
   );
 };
 
