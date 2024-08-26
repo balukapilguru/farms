@@ -14,7 +14,7 @@ const About = () => {
           services, solar power, agriculture, electronic media, construction, print media,
           business centres, hospitality, edtech, and drone technology, among others. Kapil
           Group has consistently broadened its horizons year after year, establishing itself
-          as one of the most prestigious business conglomerates in India.
+          as one of the most prestigious business conglomerates in India.f
         </p>
         <p className="lg:text-2xl  text-green text-justify tracking-wide sm:text-sm  md:text-xl m-5">
           With Mruganayani, we present the opportunity to be closer to nature. These
