@@ -40,8 +40,8 @@ const Farmhouse = () => {
               residential development. Make the wise decision to secure high
               returns on investment with Narayankhed’s promising land
               opportunities.
-            </p-->
-            <!--p className="mt-5  text-[#7D7D7D] text-justify tracking-wide lg:text-lg">
+            </p>
+            <p className="mt-5  text-[#7D7D7D] text-justify tracking-wide lg:text-lg">
               The earlier you begin investing, the more time you have to see
               your gains grow, build wealth, and secure a financial future. If
               you re searching for the ideal investment opportunity, look no
