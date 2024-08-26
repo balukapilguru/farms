@@ -81,7 +81,6 @@ const Header = () => {
             <a class="text-bold" href="mailto:marketing@kapilfarms.in">Email: marketing@kapilfarms.in</a>
           </li>
         </div>
-      
       </header>
   );
 };
