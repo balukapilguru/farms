@@ -2,9 +2,9 @@ import Image from "next/image";
 import farm from "../../../public/assets/farm.png";
 import left from "../../../public/assets/veins-left.png";
 import right from "../../../public/assets/veins-right.png";
-import infograph from "../../../public/assets/infograph.png";
-import tab from "../../../public/assets/mob.png";
-import mob from "../../../public/assets/mob-info.png";
+import infograph from "../../../public/assets/infograph1.webp";
+import tab from "../../../public/assets/mob2.webp";
+import mob from "../../../public/assets/mob-info2.webp";
 import mobleafleft from "../../../public/assets/mob-veins-left.png"
 import mobleafright from "../../../public/assets/mob-veins-right.png"
 
@@ -26,21 +26,19 @@ const Farmhouse = () => {
             </p>
 
             <p className="mt-8 lg:text-lg text-[#7D7D7D] text-justify tracking-wide">
-              Narayankhed, Hyderabad, is a high-growth corridor known for its
+              Sangareddy, Hyderabad, is a high-growth corridor known for its
               fertile soil and strong agricultural prospects. As a stable and
               secure investment, farmland here offers significant appreciation
               potential due to increasing demand for both agricultural and
-              residential development. Make the wise decision to secure high
-              returns on investment with Narayankhed’s promising land
-              opportunities.
+              residential development.
             </p>
             <p className="mt-5  text-[#7D7D7D] text-justify tracking-wide lg:text-lg">
               The earlier you begin investing, the more time you have to see
-              your gains grow, build wealth, and secure a financial future. If
-              you re searching for the ideal investment opportunity, look no
-              further—invest in Mruganayani, an expansive 50-acre oasis of
-              untouched beauty. Secure your investment today and pave the way
-              for a prosperous tomorrow!
+              your gains grow, build wealth, and secure a financial future. If you
+              re searching for the ideal investment opportunity, look no further
+              —invest in Mruganayani, an expansive 100-acre oasis of
+              untouched beauty. Secure your investment today and pave the
+              way for a prosperous tomorrow!
             </p>
           </div>
         </div>

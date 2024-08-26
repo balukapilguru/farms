@@ -1,6 +1,6 @@
 import Image from "next/image";
 import loc1 from "../../../public/assets/loc-1.png";
-import loc from "../../../public/assets/loc.png";
+import loc from "../../../public/assets/loc-new.png";
 
 const Location = () => {
   return (
@@ -10,7 +10,7 @@ const Location = () => {
           Location
         </h1>
         <p className="text-[#BC9D3D] text-center lg:text-lg ">
-          Strategically located in Narayankhed, the high-growth corridor
+          Strategically located in Sangareddy, the high-growth corridor
         </p>
       </div>
       <div className="lg:flex mt-10 gap-5 mx-5">

@@ -5,7 +5,8 @@ import Link from "next/link";
 import fb from "./../../public/assets/icons/fb.png";
 import insta from "./../../public/assets/icons/insta.png";
 import ln from "./../../public/assets/icons/ln.png";
-import Qr from "./../../public/assets/QRcode.png";
+import Qr from "./../../public/assets/QRcode25.webp";
+import yt from "./../../public/assets/youtube.webp";
 const Footer = () => {
   return (
     <footer className=" text-zinc-400 ">
@@ -28,18 +29,23 @@ const Footer = () => {
             </p>
             <ul className="flex gap-5 mt-2">
               <li>
-                <Link href="#">
+                <Link href="https://www.facebook.com/people/Mruganayani-by-Kapil-Farms/61556147414387/">
                   <Image src={fb} alt="fb" className="w-10" />
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="https://www.instagram.com/mruganayani_farms/">
                   <Image src={insta} alt="insta" className="w-10"/>
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="https://www.linkedin.com/company/mruganayani-farms/">
                   <Image src={ln} alt="ln" className="w-10"/>
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.youtube.com/@KapilMruganayani">
+                  <Image src={yt} alt="ln" className="w-10"/>
                 </Link>
               </li>
             </ul>
@@ -48,7 +54,7 @@ const Footer = () => {
         <div className="lg:flex mt-5">
           <div className="md:w-2/3 sm:flex sm:flex-col sm:items-center lg:block">
             <Image src={Qr} alt="qr" className="w-40" />
-            <p className="text-white text-md mt-2">For more info scan here<br/> Number - 9705311222</p>
+            <p className="text-white text-md mt-2">For more info scan here<br/> Number - 9839837280</p>
           </div>
           <div className="lg:w-2/3 flex flex-col justify-end py-5 sm:hidden md:flex lg:flex">
             <h1 className="text-3xl font-bold text-[#7ABF4E] tracking-wide lg:text-right ">
