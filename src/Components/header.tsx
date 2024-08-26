@@ -73,10 +73,13 @@ const Header = () => {
           ))}
         </ul>
       </nav>
-      <div className="lg:flex mt-5">
-            <p><a href="tel:+919839837280" className="text-[16px] lg:text-green sm:text-white">Call: +91-9839837280</a></p>
-            <p><a href="mailto:marketing@kapilfarms.in" className="text-[16px] lg:text-green sm:text-white">Email: marketing@kapilfarms.in</a></p>
-         
+      <div>
+          <li className="text-[16px] lg:text-green sm:text-white sm:text-center lg:text-right md:text-right xl:text-right  sm:m-4 md:m-4 lg:m-0 td">
+            <a className="text-bold" href="tel:+91-9839837280">Call: +91-9839837280</a>
+          </li>
+          <li className="text-[16px] lg:text-green sm:text-white  sm:text-center sm:m-4 md:m-4 lg:m-0 td">
+            <a className="text-bold" href="mailto:marketing@kapilfarms.in">Email: marketing@kapilfarms.in</a>
+          </li>
         </div>
       </header>
   );
