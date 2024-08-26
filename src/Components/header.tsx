@@ -74,8 +74,8 @@ const Header = () => {
         </ul>
       </nav>
       <div className="lg:flex mt-5">
-            <a href="tel:+919839837280" className="text-[16px] lg:text-green sm:text-white">Call: +91-9839837280</a><br>
-            <a href="mailto:marketing@kapilfarms.in" className="text-[16px] lg:text-green sm:text-white">Email: marketing@kapilfarms.in</a>
+            <p><a href="tel:+919839837280" className="text-[16px] lg:text-green sm:text-white">Call: +91-9839837280</a></p>
+            <p><a href="mailto:marketing@kapilfarms.in" className="text-[16px] lg:text-green sm:text-white">Email: marketing@kapilfarms.in</a></p>
          
         </div>
       </header>
