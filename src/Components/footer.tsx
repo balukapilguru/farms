@@ -6,6 +6,7 @@ import fb from "./../../public/assets/icons/fb.png";
 import insta from "./../../public/assets/icons/insta.png";
 import ln from "./../../public/assets/icons/ln.png";
 import Qr from "./../../public/assets/QRcode25.webp";
+import yt from "./../../public/assets/youtube.webp";
 const Footer = () => {
   return (
     <footer className=" text-zinc-400 ">
@@ -40,6 +41,11 @@ const Footer = () => {
               <li>
                 <Link href="#">
                   <Image src={ln} alt="ln" className="w-10"/>
+                </Link>
+              </li>
+              <li>
+                <Link href="#">
+                  <Image src={yt} alt="ln" className="w-10"/>
                 </Link>
               </li>
             </ul>
