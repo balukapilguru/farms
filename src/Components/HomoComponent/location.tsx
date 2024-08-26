@@ -19,7 +19,7 @@ const Location = () => {
         </div>
         <div className="lg:w-1/2 md:flex md:justify-center md:mt-10 lg:mt-0 sm:mt-10">
           <Image
-            src={loc}
+            src={loc3}
             alt="loc"
             className="border border-green rounded-2xl"
           />
