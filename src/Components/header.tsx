@@ -42,7 +42,7 @@ const Header = () => {
   return (
     <header className="flex justify-between items-center py-4 px-5">
       {/* Logo */}
-      <Image src={logo} alt="Logo" priority className="sm:w-24" />
+      <Image src={logo} alt="Logo" priority className="sm:w-24 md:w-32 lg:w-32 xl:w-32" />
 
       {/* Navbar */}
       <nav className="w-75">
