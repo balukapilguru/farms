@@ -5,6 +5,8 @@ import HeroSection from "@/Components/HomoComponent/heroSection";
 import Location from "@/Components/HomoComponent/location";
 import Mruganayani from "@/Components/HomoComponent/mruganayani";
 
+
+
 export default function Home() {
   return (
     <main className="mt-3">
@@ -13,7 +15,7 @@ export default function Home() {
       <Farmhouse />
       <About />
       <Location/>
-      <ResponsiveCarousel/>
+      <ResponsiveCarousel/>    
     </main>
   );
 }

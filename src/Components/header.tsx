@@ -23,6 +23,10 @@ const navLinks = [
     href: "https://www.kapilfarms.in/#contact--nav",
     label: "CONTACT US",
   },
+  {
+    href: "/familyfarmland",
+    label: "FAMILY FARM LAND",
+  },
 ];
 
 // Header component
