@@ -32,23 +32,6 @@ const Farmhouse = () => {
               potential due to increasing demand for both agricultural and
               residential development.
             </p>
-            <!--p className="mt-8 lg:text-lg text-[#7D7D7D] text-justify tracking-wide">
-              Narayankhed, Hyderabad, is a high-growth corridor known for its
-              fertile soil and strong agricultural prospects. As a stable and
-              secure investment, farmland here offers significant appreciation
-              potential due to increasing demand for both agricultural and
-              residential development. Make the wise decision to secure high
-              returns on investment with Narayankhed’s promising land
-              opportunities.
-            </p>
-            <p className="mt-5  text-[#7D7D7D] text-justify tracking-wide lg:text-lg">
-              The earlier you begin investing, the more time you have to see
-              your gains grow, build wealth, and secure a financial future. If
-              you re searching for the ideal investment opportunity, look no
-              further—invest in Mruganayani, an expansive 50-acre oasis of
-              untouched beauty. Secure your investment today and pave the way
-              for a prosperous tomorrow!
-            </p-->
             <p className="mt-5  text-[#7D7D7D] text-justify tracking-wide lg:text-lg">
               The earlier you begin investing, the more time you have to see
               your gains grow, build wealth, and secure a financial future. If you
