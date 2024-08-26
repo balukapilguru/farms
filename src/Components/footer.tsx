@@ -5,7 +5,7 @@ import Link from "next/link";
 import fb from "./../../public/assets/icons/fb.png";
 import insta from "./../../public/assets/icons/insta.png";
 import ln from "./../../public/assets/icons/ln.png";
-import Qr from "./../../public/assets/QRcode.png";
+import Qr from "./../../public/assets/QRcode25.webp";
 const Footer = () => {
   return (
     <footer className=" text-zinc-400 ">
