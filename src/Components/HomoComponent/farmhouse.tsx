@@ -11,7 +11,7 @@ import mobleafright from "../../../public/assets/mob-veins-right.png"
 const Farmhouse = () => {
   return (
     <>
-      <section className="bg-[url('/assets/farm.png')] bg-cover  flex items-center lg:px-10 py-10 mt-10">
+      <section className="bg-[url('/assets/farm.png')] bg-cover  flex items-center lg:px-10 py-10 mt-10" id="contact">
         <div className=" lg:flex rounded-3xl  align-items-center bg-white sm:px-2 sm:py-2  lg:px-10 lg:py-10 gap-10">
           <div className="lg:w-1/2 flex items-center  ">
             <Image src={farm} alt="farm" className="rounded-3xl " />
