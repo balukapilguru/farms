@@ -77,7 +77,7 @@ const HeroSection = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="mt-1 flex flex-col items-center px-8" id={contact}>
+          <form onSubmit={handleSubmit} className="mt-1 flex flex-col items-center px-8">
             <input
               type="text"
               name="name" 
