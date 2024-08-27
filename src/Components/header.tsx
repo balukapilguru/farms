@@ -8,24 +8,20 @@ import { FaBars } from "react-icons/fa";
 // Define navigation links
 const navLinks = [
   {
-    href: "/",
+    href: "#whoweare",
     label: "WHO ARE WE",
   },
   {
-    href: "https://www.kapilfarms.in/#highlights--nav",
+    href: "#highlights",
     label: "HIGHLIGHTS",
   },
   {
-    href: "https://www.kapilfarms.in/#projects--nav",
+    href: "#projects",
     label: "OUR PROJECTS",
   },
   {
-    href: "https://www.kapilfarms.in/#contact--nav",
+    href: "#contact",
     label: "CONTACT US",
-  },
-  {
-    href: "/familyfarmland",
-    label: "FAMILY FARM LAND",
   },
 ];
 
