@@ -3,7 +3,7 @@ import kapil from "../../../public/assets/kapil-logo.png";
 
 const About = () => {
   return (
-    <div className="mt-10 lg:flex items-center ">
+    <div className="mt-10 lg:flex items-center " id="whoweare">
       <div className="lg:w-1/3 flex justify-center">
         <Image src={kapil} alt="kapil-logo" />
       </div>
