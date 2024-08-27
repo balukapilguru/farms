@@ -52,7 +52,7 @@ type CardProps = {
 export default function ResponsiveCarousel() {
   const ref = React.useRef();
   return (
-    <div style={{ width: "100%", position: "relative" }} className="mt-10">
+    <div style={{ width: "100%", position: "relative" }} className="mt-10" id="projects">
       <ResponsiveContainer
         carouselRef={ref}
         render={(parentWidth, carouselRef) => {
