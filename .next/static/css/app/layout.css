@@ -620,8 +620,8 @@ video {
 .w-60 {
   width: 15rem;
 }
-.td{
-  list-style:none;
+.hm{
+      list-style-type: none;
 }
 .w-\[400px\] {
   width: 400px;
