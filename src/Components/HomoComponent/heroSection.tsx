@@ -58,7 +58,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-auto bg-cover bg-center rounded-3xl lg:flex align-items-center mx-5 bg-[url('/assets/LP-image.png')]">
+    <section className="relative h-auto bg-cover bg-center rounded-3xl lg:flex align-items-center mx-5 bg-[url('/assets/LP-image.png')]" id="contact">
       <div className="lg:w-1/2 lg:px-12 flex items-end sm:justify-center md:justify-center sm:w-full">
         <h1 className="text-white font-bold px-5 lg:text-2xl xl:text-3xl text:5xl uppercase tracking-wider md:text-3xl sm:text-xl py-8">
           Venture into the land <br />
