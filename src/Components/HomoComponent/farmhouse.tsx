@@ -2,9 +2,9 @@ import Image from "next/image";
 import farm from "../../../public/assets/farm.png";
 import left from "../../../public/assets/veins-left.png";
 import right from "../../../public/assets/veins-right.png";
-import infograph from "../../../public/assets/infograph1.webp";
-import tab from "../../../public/assets/mob2.webp";
-import mob from "../../../public/assets/mob-info2.webp";
+import infograph from "../../../public/assets/lap.png";
+import tab from "../../../public/assets/tab.png";
+import mob from "../../../public/assets/phone.png";
 import mobleafleft from "../../../public/assets/mob-veins-left.png"
 import mobleafright from "../../../public/assets/mob-veins-right.png"
 
