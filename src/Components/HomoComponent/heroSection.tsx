@@ -112,6 +112,7 @@ const HeroSection = () => {
               {loading ? 'Submitting...' : 'Submit'}
             </button>
             {error && <p className="text-red-500 mt-2">{error}</p>}
+            {success && <p className="text-green-500 mt-2">Form submitted successfully!</p>}  {/* Success message */}
           </form>
           <Image src={gif} alt="Background GIF" className="w-full rounded-2xl mt-8" />
         </div>
