@@ -77,10 +77,10 @@ const HeroSection = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="mt-1 flex flex-col items-center px-8">
+          <form onSubmit={handleSubmit} className="mt-1 flex flex-col items-center px-8" id={contact}>
             <input
               type="text"
-              name="name"
+              name="name" 
               value={formData.name}
               onChange={handleChange}
               className="bg-lightgolden border-b py-1 focus:outline-none w-full mt-2"
