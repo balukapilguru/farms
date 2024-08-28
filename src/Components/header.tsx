@@ -37,10 +37,6 @@ const Header = () => {
 
   return (
     <>
-    {/* Add the favicon in the Head component */}
-      <Head>
-        <link rel="icon" href="../../public/assets/logo/color.png" />
-      </Head>
     
     <header className="flex justify-between items-center py-4 px-5">
       {/* Logo */}
