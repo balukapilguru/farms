@@ -10,6 +10,9 @@ const inter = Poppins({ weight: "400", subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
   title: "Kapil Farm",
   description: "Kapil Farm Website",
+  icons: {
+    icon: "../../public/assets/logo/color.png",  // Path to your favicon
+  },
 };
 
 export default function RootLayout({
