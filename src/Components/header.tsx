@@ -36,6 +36,7 @@ const Header = () => {
   };
 
   return (
+    <>
     {/* Add the favicon in the Head component */}
       <Head>
         <link rel="icon" href="../../public/assets/logo/color.png" />
@@ -89,6 +90,7 @@ const Header = () => {
   gtag('config', 'AW-11454847573');
 </script>
       </header>
+      </>
   );
 };
 
