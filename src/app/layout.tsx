@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="../../public/assets/logo/color.png" />
+      </Head>
       <body
         className={`${inter.className}  bg-zinc-100 text-zinc-800  min-h-screen  `}
       >
