@@ -36,6 +36,11 @@ const Header = () => {
   };
 
   return (
+    {/* Add the favicon in the Head component */}
+      <Head>
+        <link rel="icon" href="../../public/assets/logo/color.png" />
+      </Head>
+    
     <header className="flex justify-between items-center py-4 px-5">
       {/* Logo */}
       <Image src={logo} alt="Logo" priority className="sm:w-24 md:w-32 lg:w-32 xl:w-32" />
