@@ -25,7 +25,7 @@ const Mruganayani = () => {
           <div className="flex flex-wrap justify-around mt-8 gap-[20px]">
             <div className="flex flex-col items-center">
               <Image src={icon1} alt="icon1" />
-              <p className="text-black text-sm mt-3">100% Clear Time</p>
+              <p className="text-black text-sm mt-3">100% Clear Title</p>
             </div>
             <div className="flex flex-col items-center">
               <Image src={icon2} alt="icon1" />
