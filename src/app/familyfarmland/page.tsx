@@ -186,7 +186,7 @@ const NewComponent = () => {
           <h1 className="text-xl">
             100%
             <br />
-            Clear Title
+            Clear Title1
           </h1>
         </div>
         <div className="flex flex-col items-center text-center z-10">
