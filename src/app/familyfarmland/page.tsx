@@ -138,7 +138,7 @@ const NewComponent = () => {
           </p>
           <p className="text-center font-bold">now is a great time !</p>
           <p className="text-white text-center font-bold text-3xl mt-5 ">
-            contact us now !
+            Contact Us Now !
           </p>
         </div>
 
