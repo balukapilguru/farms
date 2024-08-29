@@ -76,7 +76,7 @@ const Header = () => {
             <a href="mailto:Email: marketing@kapilfarms.in" className="text-[16px] lg:text-green sm:text-white">Email: marketing@kapilfarms.in</a>
          
         </div>
-      <!-- Google tag (gtag.js) -->
+      //<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11454847573"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
