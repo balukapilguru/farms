@@ -8,24 +8,20 @@ import { FaBars } from "react-icons/fa";
 // Define navigation links
 const navLinks = [
   {
-    href: "/",
+    href: "#whoweare",
     label: "WHO ARE WE",
   },
   {
-    href: "https://www.kapilfarms.in/#highlights--nav",
+    href: "#highlights",
     label: "HIGHLIGHTS",
   },
   {
-    href: "https://www.kapilfarms.in/#projects--nav",
+    href: "#projects",
     label: "OUR PROJECTS",
   },
   {
-    href: "https://www.kapilfarms.in/#contact--nav",
+    href: "#contact",
     label: "CONTACT US",
-  },
-  {
-    href: "/familyfarmland",
-    label: "FAMILY FARM LAND",
   },
 ];
 
@@ -40,9 +36,11 @@ const Header = () => {
   };
 
   return (
+    <>
+    
     <header className="flex justify-between items-center py-4 px-5">
       {/* Logo */}
-      <Image src={logo} alt="Logo" priority className="sm:w-24" />
+      <Image src={logo} alt="Logo" priority className="sm:w-24 md:w-32 lg:w-32 xl:w-32" />
 
       {/* Navbar */}
       <nav className="w-75">
@@ -73,7 +71,14 @@ const Header = () => {
           ))}
         </ul>
       </nav>
-    </header>
+      <div className="">
+            <a href="tel:+919839837280" className="text-[16px] lg:text-green sm:text-white">Call: +91-9839837280</a><br/>
+            <a href="mailto:Email: marketing@kapilfarms.in" className="text-[16px] lg:text-green sm:text-white">Email: marketing@kapilfarms.in</a>
+         
+        </div>
+     
+      </header>
+      </>
   );
 };
 

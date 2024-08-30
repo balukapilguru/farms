@@ -8,7 +8,7 @@ import icon5 from "../../../public/assets/m-ICON/Frame 20.png";
 
 const Mruganayani = () => {
   return (
-    <section className="mt-10 lg:rounded-full md:px-5 sm:rounded-lg md:rounded-lg shadow-2xl mx-w-75 md:p-10 mx-5">
+    <section className="mt-10 lg:rounded-full md:px-5 sm:rounded-lg md:rounded-lg shadow-2xl mx-w-75 md:p-10 mx-5" id="highlights">
       <div className=" lg:py-8 lg:flex items-center  ">
         <div className="lg:w-1/3 flex md:justify-center sm:justify-center">
         <Image src={mrugayan} alt="mrugayan" className="w-[300px]"  />
@@ -25,7 +25,7 @@ const Mruganayani = () => {
           <div className="flex flex-wrap justify-around mt-8 gap-[20px]">
             <div className="flex flex-col items-center">
               <Image src={icon1} alt="icon1" />
-              <p className="text-black text-sm mt-3">100% Clear Time</p>
+              <p className="text-black text-sm mt-3">100% Clear Title</p>
             </div>
             <div className="flex flex-col items-center">
               <Image src={icon2} alt="icon1" />

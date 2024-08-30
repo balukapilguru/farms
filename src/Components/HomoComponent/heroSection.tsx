@@ -1,4 +1,3 @@
-"use client";
 import { useState, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
 import Image from 'next/image';
@@ -19,7 +18,6 @@ const HeroSection = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // Handle input changes
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -28,29 +26,27 @@ const HeroSection = () => {
     }));
   };
 
-  // Handle form submission
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setError('');
 
-    // Log formData to the console
     console.log('Form data submitted:', formData);
 
     try {
-      // Use a CORS proxy for development
       const response = await axios.post('https://api.kapilfarms.in/contactform', formData);
-      // Handle response if needed
       console.log('Form submitted successfully:', response.data);
-      // Reset form if needed
       setFormData({
         name: '',
         phonenumber: '',
         email: '',
       });
-    } catch (err) {
-      // Handle error
-      setError('Failed to submit form. Please try again.');
+    } catch (err: unknown) {
+      if (axios.isAxiosError(err)) {
+        setError(err.response?.data?.message || 'Failed to submit form. Please try again.');
+      } else {
+        setError('Failed to submit form. Please try again.');
+      }
       console.error('Form submission error:', err);
     } finally {
       setLoading(false);
@@ -58,9 +54,9 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-auto bg-cover bg-center rounded-3xl lg:flex align-items-center mx-5 bg-[url('/assets/LP-image.png')]">
+    <section className="relative h-auto bg-cover bg-center rounded-3xl lg:flex align-items-center mx-5" id="contact" style={{ backgroundImage: `url('/assets/LP-image.png')` }}>
       <div className="lg:w-1/2 lg:px-12 flex items-end sm:justify-center md:justify-center sm:w-full">
-        <h1 className="text-white font-bold px-5 lg:text-2xl xl:text-3xl text:5xl uppercase tracking-wider md:text-3xl sm:text-xl py-8">
+        <h1 className="text-white font-bold px-5 lg:text-2xl xl:text-3xl text-5xl uppercase tracking-wider md:text-3xl sm:text-xl py-8">
           Venture into the land <br />
           of limitless possibilities!
         </h1>
@@ -80,11 +76,12 @@ const HeroSection = () => {
           <form onSubmit={handleSubmit} className="mt-1 flex flex-col items-center px-8">
             <input
               type="text"
-              name="name"
+              name="name" 
               value={formData.name}
               onChange={handleChange}
               className="bg-lightgolden border-b py-1 focus:outline-none w-full mt-2"
               placeholder="Full Name"
+              aria-label="Full Name"
               required
             />
             <input
@@ -94,6 +91,7 @@ const HeroSection = () => {
               onChange={handleChange}
               className="bg-lightgolden border-b py-1 focus:outline-none w-full mt-8"
               placeholder="Contact Number"
+              aria-label="Contact Number"
               required
             />
             <input
@@ -103,6 +101,7 @@ const HeroSection = () => {
               onChange={handleChange}
               className="bg-lightgolden border-b py-1 focus:outline-none w-full mt-8"
               placeholder="E-mail ID"
+              aria-label="E-mail ID"
               required
             />
             <button
@@ -113,8 +112,9 @@ const HeroSection = () => {
               {loading ? 'Submitting...' : 'Submit'}
             </button>
             {error && <p className="text-red-500 mt-2">{error}</p>}
+          
           </form>
-          <Image src={gif} alt="gif" className="w-full rounded-2xl mt-8" />
+          <Image src={gif} alt="Background GIF" className="w-full rounded-2xl mt-8" />
         </div>
       </div>
     </section>

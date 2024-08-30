@@ -10,6 +10,7 @@ const inter = Poppins({ weight: "400", subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
   title: "Kapil Farm",
   description: "Kapil Farm Website",
+  
 };
 
 export default function RootLayout({
@@ -19,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body
         className={`${inter.className}  bg-zinc-100 text-zinc-800  min-h-screen  `}
       >

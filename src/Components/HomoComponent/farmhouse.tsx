@@ -2,16 +2,16 @@ import Image from "next/image";
 import farm from "../../../public/assets/farm.png";
 import left from "../../../public/assets/veins-left.png";
 import right from "../../../public/assets/veins-right.png";
-import infograph from "../../../public/assets/infograph1.webp";
-import tab from "../../../public/assets/mob2.webp";
-import mob from "../../../public/assets/mob-info2.webp";
+import infograph from "../../../public/assets/lap.png";
+import tab from "../../../public/assets/tab.png";
+import mob from "../../../public/assets/phone.png";
 import mobleafleft from "../../../public/assets/mob-veins-left.png"
 import mobleafright from "../../../public/assets/mob-veins-right.png"
 
 const Farmhouse = () => {
   return (
     <>
-      <section className="bg-[url('/assets/farm.png')] bg-cover  flex items-center lg:px-10 py-10 mt-10">
+      <section className="bg-[url('/assets/farm.png')] bg-cover  flex items-center lg:px-10 py-10 mt-10" id="farmland">
         <div className=" lg:flex rounded-3xl  align-items-center bg-white sm:px-2 sm:py-2  lg:px-10 lg:py-10 gap-10">
           <div className="lg:w-1/2 flex items-center  ">
             <Image src={farm} alt="farm" className="rounded-3xl " />

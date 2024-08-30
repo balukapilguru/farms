@@ -29,22 +29,22 @@ const Footer = () => {
             </p>
             <ul className="flex gap-5 mt-2">
               <li>
-                <Link href="https://www.facebook.com/people/Mruganayani-by-Kapil-Farms/61556147414387/">
+                <Link href="https://www.facebook.com/people/Mruganayani-by-Kapil-Farms/61556147414387/" target="_blank">
                   <Image src={fb} alt="fb" className="w-10" />
                 </Link>
               </li>
               <li>
-                <Link href="https://www.instagram.com/mruganayani_farms/">
+                <Link href="https://www.instagram.com/mruganayani_farms/" target="_blank">
                   <Image src={insta} alt="insta" className="w-10"/>
                 </Link>
               </li>
               <li>
-                <Link href="https://www.linkedin.com/company/mruganayani-farms/">
+                <Link href="https://www.linkedin.com/company/mruganayani-farms/" target="_blank">
                   <Image src={ln} alt="ln" className="w-10"/>
                 </Link>
               </li>
               <li>
-                <Link href="https://www.youtube.com/@KapilMruganayani">
+                <Link href="https://www.youtube.com/@KapilMruganayani" target="_blank">
                   <Image src={yt} alt="ln" className="w-10"/>
                 </Link>
               </li>
@@ -62,27 +62,27 @@ const Footer = () => {
             </h1>
             <ul className="flex justify-between mt-2 ">
               <li>
-                <Link href="#" className="text-white uppercase text-sm">
+                <Link href="#whoweare" className="text-white uppercase text-sm">
                   who are we
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-white uppercase text-sm">
+                <Link href="#highlights" className="text-white uppercase text-sm">
                   HIGHLIGHTS
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-white uppercase text-sm">
+                <Link href="#farmland" className="text-white uppercase text-sm">
                   Farmland
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-white uppercase text-sm">
+                <Link href="#highlights" className="text-white uppercase text-sm">
                   Amenities
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-white uppercase text-sm">
+                <Link href="#contact" className="text-white uppercase text-sm">
                   CONTACT US
                 </Link>
               </li>

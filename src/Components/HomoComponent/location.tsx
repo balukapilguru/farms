@@ -31,9 +31,9 @@ const Location = () => {
           <h1 className="lg:text-4xl text-white font-bold uppercase sm:text-2xl md:text-2xl  ">
             Start your financial <br /> growth today!
           </h1>
-          <button className="text-white font-bold text-xl bg-[#7ABF4E] px-4 py-3 rounded-full mt-5">
+          <a href="#contact" className="text-white font-bold text-xl bg-[#7ABF4E] px-4 py-3 rounded-full mt-5">
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
     </section>

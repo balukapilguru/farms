@@ -614,8 +614,13 @@ video {
 .w-60 {
   width: 15rem;
 }
+<<<<<<< HEAD
 .w-\[300px\] {
   width: 300px;
+=======
+.hm{
+      list-style-type: none;
+>>>>>>> 1786ab1049e7a19965b2540378b5eb9f90bfa75b
 }
 .w-\[400px\] {
   width: 400px;
@@ -982,7 +987,7 @@ video {
   }
 
   .sm\:w-24 {
-    width: 6rem;
+    width: 8rem;
   }
 
   .sm\:w-full {

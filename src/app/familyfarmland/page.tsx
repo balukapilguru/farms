@@ -136,9 +136,8 @@ const NewComponent = () => {
             <br /> Watch your wealth grow <br />
             with your children !
           </p>
-          <p className="text-center font-bold">now is a great time !</p>
           <p className="text-white text-center font-bold text-3xl mt-5 ">
-            contact us now !
+            Contact Us Now !
           </p>
         </div>
 
@@ -186,7 +185,7 @@ const NewComponent = () => {
           <h1 className="text-xl">
             100%
             <br />
-            Clear Title
+            Clear Title1
           </h1>
         </div>
         <div className="flex flex-col items-center text-center z-10">
