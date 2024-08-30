@@ -29,8 +29,14 @@ export default function RootLayout({
           {children}
           <Footer />
         </Container>
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P28GH3CZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-P28GH3CZ"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
       </body>
     </html>
   );
