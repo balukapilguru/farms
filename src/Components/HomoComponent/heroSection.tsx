@@ -59,7 +59,7 @@ const HeroSection = () => {
       <div className="lg:w-1/2 lg:px-12 flex items-end sm:justify-center md:justify-center sm:w-full">
         <h1 className="text-white font-bold px-5 lg:text-2xl xl:text-3xl text-5xl uppercase tracking-wider md:text-3xl sm:text-xl py-8">
           Venture into the land <br />
-          of limitless possibilities!
+          of limitless possibilities!!
         </h1>
       </div>
       <div className="lg:w-1/2 flex lg:justify-end md:items-end relative lg:m-10 sm:justify-center">
