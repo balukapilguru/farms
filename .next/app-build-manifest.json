@@ -1,43 +1,15 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-9043eaaa2bc5c74a.js",
-      "static/chunks/fd9d1056-6cbacb229cb5f22d.js",
-      "static/chunks/23-b245407a5ef2b339.js",
-      "static/chunks/main-app-f13b740d5704ddbb.js",
-      "static/chunks/app/_not-found/page-42ccaa66aef5add1.js"
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
-      "static/chunks/webpack-9043eaaa2bc5c74a.js",
-      "static/chunks/fd9d1056-6cbacb229cb5f22d.js",
-      "static/chunks/23-b245407a5ef2b339.js",
-      "static/chunks/main-app-f13b740d5704ddbb.js",
-      "static/css/fd72c459d3ef3194.css",
-      "static/chunks/8e1d74a4-f4c14899eaba67bd.js",
-      "static/chunks/648-19df381f0a239523.js",
-      "static/chunks/381-9d90e93ebd9dbb38.js",
-      "static/chunks/app/layout-a11981a5eca58775.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-9043eaaa2bc5c74a.js",
-      "static/chunks/fd9d1056-6cbacb229cb5f22d.js",
-      "static/chunks/23-b245407a5ef2b339.js",
-      "static/chunks/main-app-f13b740d5704ddbb.js",
-      "static/chunks/648-19df381f0a239523.js",
-      "static/chunks/472-88626057ffc60ccd.js",
-      "static/chunks/50-52f792a659d60fa4.js",
-      "static/chunks/app/page-21d949d3b9afa712.js"
-    ],
-    "/familyfarmland/page": [
-      "static/chunks/webpack-9043eaaa2bc5c74a.js",
-      "static/chunks/fd9d1056-6cbacb229cb5f22d.js",
-      "static/chunks/23-b245407a5ef2b339.js",
-      "static/chunks/main-app-f13b740d5704ddbb.js",
-      "static/css/9d096cee773aa20e.css",
-      "static/chunks/648-19df381f0a239523.js",
-      "static/chunks/472-88626057ffc60ccd.js",
-      "static/chunks/19-8dac6ebd690c1b3c.js",
-      "static/chunks/app/familyfarmland/page-4e5b3a1eb28b6c0c.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ]
   }
 }

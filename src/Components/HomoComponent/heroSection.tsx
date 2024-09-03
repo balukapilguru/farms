@@ -1,5 +1,5 @@
 "use client"
-import { useState, ChangeEvent, FormEvent } from 'react';
+import { useState, ChangeEvent, FormEvent, useEffect } from 'react';
 import axios from 'axios';
 import Image from 'next/image';
 import gif from '../../../public/assets/form_bg.gif';
@@ -18,6 +18,8 @@ const HeroSection = () => {
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+  const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -31,6 +33,7 @@ const HeroSection = () => {
     e.preventDefault();
     setLoading(true);
     setError('');
+    setSuccess('');
 
     console.log('Form data submitted:', formData);
 
@@ -42,9 +45,19 @@ const HeroSection = () => {
         phonenumber: '',
         email: '',
       });
+      setSuccess("Form submitted successfully");
+
+      // Clear success message after 5 seconds
+      const id = setTimeout(() => {
+        setSuccess('');
+      }, 5000);
+
+      setTimeoutId(id);
+
     } catch (err: unknown) {
       if (axios.isAxiosError(err)) {
-        setError(err.response?.data?.message || 'Failed to submit form. Please try again.');
+        const message = err.response?.data?.message || 'Failed to submit form. Please try again.';
+        setError(message);
       } else {
         setError('Failed to submit form. Please try again.');
       }
@@ -53,6 +66,14 @@ const HeroSection = () => {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [timeoutId]);
 
   return (
     <section className="relative h-auto bg-cover bg-center rounded-3xl lg:flex align-items-center mx-5" id="contact" style={{ backgroundImage: `url('/assets/LP-image.png')` }}>
@@ -112,8 +133,8 @@ const HeroSection = () => {
             >
               {loading ? 'Submitting...' : 'Submit'}
             </button>
-            {error && <p className="text-red-500 mt-2">{error}</p>}
-          
+            {success && <p className="text-green-500 mt-2" style={{color:"green"}}>{success}</p>}
+            {error && <p className="text-red-500 mt-2" style={{color:"red"}}>{error}</p>}
           </form>
           <Image src={gif} alt="Background GIF" className="w-full rounded-2xl mt-8" />
         </div>
