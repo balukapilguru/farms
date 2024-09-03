@@ -48,11 +48,7 @@ const HeroSection = () => {
       setSuccess("Form submitted successfully");
 
       // Clear success message after 5 seconds
-      const id = setTimeout(() => {
-        setSuccess('');
-      }, 5000);
 
-      setTimeoutId(id);
 
     } catch (err: unknown) {
       if (axios.isAxiosError(err)) {
@@ -64,6 +60,12 @@ const HeroSection = () => {
       console.error('Form submission error:', err);
     } finally {
       setLoading(false);
+      const id = setTimeout(() => {
+        setSuccess('');
+        setError('')
+      }, 5000);
+
+      setTimeoutId(id);
     }
   };
 
@@ -133,8 +135,8 @@ const HeroSection = () => {
             >
               {loading ? 'Submitting...' : 'Submit'}
             </button>
-            {success && <p className="text-green-500 mt-2" style={{color:"green"}}>{success}</p>}
-            {error && <p className="text-red-500 mt-2" style={{color:"red"}}>{error}</p>}
+            {success && <p className=" mt-2 fw-700 fs-22" style={{color:"white", backgroundColor:"green",padding:"10px"}}>{success}</p>}
+            {error && <p className="text-red-500 mt-2" style={{color:"white", backgroundColor:"red",padding:"10px"}}>{error}</p>}
           </form>
           <Image src={gif} alt="Background GIF" className="w-full rounded-2xl mt-8" />
         </div>
