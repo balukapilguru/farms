@@ -125,7 +125,7 @@ const NewComponent = () => {
       <h1 className="  text-white   px-10 lg:text-4xl xl:text-4xl   tracking-wider md:text-3xl sm:text-2xl py-10 ">
         Escape the city with your kids,
         <br />
-        <span className="text-[#bc9d3d]">find home away from home at Mruganayani!</span>
+        <span className="text-[#bc9d3d]">find home away from home at Mruganayani!!</span>
       </h1>
     </div>
     <div className="lg:w-1/3 flex lg:items-start md:justify-center  relative sm:justify-center bg-[#000] ">
