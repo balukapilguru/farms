@@ -1,5 +1,5 @@
 "use client";
-import { useState, ChangeEvent, FormEvent } from 'react';
+import { useState, ChangeEvent, FormEvent, useEffect } from 'react';
 import axios from 'axios';
 import Image from "next/image";
 import icon1 from "../../../public/assets/Icon1.png";
@@ -80,8 +80,9 @@ const NewComponent = () => {
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+  const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
 
-  // Handle input changes
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -90,33 +91,53 @@ const NewComponent = () => {
     }));
   };
 
-  // Handle form submission
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setError('');
+    setSuccess('');
 
-  
     console.log('Form data submitted:', formData);
 
     try {
-      
       const response = await axios.post('https://api.kapilfarms.in/contactform', formData);
-      
       console.log('Form submitted successfully:', response.data);
       setFormData({
         name: '',
         phonenumber: '',
         email: '',
       });
-    } catch (err) {
-      // Handle error
-      setError('Failed to submit form. Please try again.');
+      setSuccess("Form submitted successfully");
+
+      // Clear success message after 5 seconds
+
+
+    } catch (err: unknown) {
+      if (axios.isAxiosError(err)) {
+        const message = err.response?.data?.message || 'Failed to submit form. Please try again.';
+        setError(message);
+      } else {
+        setError('Failed to submit form. Please try again.');
+      }
       console.error('Form submission error:', err);
     } finally {
       setLoading(false);
+      const id = setTimeout(() => {
+        setSuccess('');
+        setError('')
+      }, 5000);
+
+      setTimeoutId(id);
     }
   };
+
+  useEffect(() => {
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [timeoutId]);
     
   return (
     <div>
@@ -140,8 +161,12 @@ const NewComponent = () => {
             Contact Us Now !
           </p>
         </div>
-
+       
+       
         <form onSubmit={handleSubmit}  className="mt-1 flex flex-col items-center p-8">
+        {success && <p className="" style={{color:"white", backgroundColor:"green",padding:"6px"}}>{success}</p>}
+       {error && <p className="" style={{color:"white", backgroundColor:"red",padding:"6px"}}>{error}</p>}
+  
           <input
             type="text"
             name="name"
@@ -169,7 +194,7 @@ const NewComponent = () => {
           <button className="bg-[#267139] text-white p-3 mt-8 lg:text-3xl rounded-xl">
             Submit
           </button>
-          
+         
         </form>
       </div>
     </div>
