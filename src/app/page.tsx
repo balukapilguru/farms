@@ -4,6 +4,7 @@ import Farmhouse from "@/Components/HomoComponent/farmhouse";
 import HeroSection from "@/Components/HomoComponent/heroSection";
 import Location from "@/Components/HomoComponent/location";
 import Mruganayani from "@/Components/HomoComponent/mruganayani";
+import ScrollToTopButton from '@/Components/ScrollToTop';
 
 
 
@@ -15,7 +16,8 @@ export default function Home() {
       <Farmhouse />
       <About />
       <Location/>
-      <ResponsiveCarousel/>    
+      <ResponsiveCarousel/>
+      <ScrollToTopButton />
     </main>
   );
 }
