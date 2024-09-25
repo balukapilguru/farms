@@ -1,5 +1,7 @@
 "use client";
 import { useState, ChangeEvent, FormEvent, useEffect } from 'react';
+
+import ScrollToTopButton from '../../../src/Components/ScrollToTop';
 import axios from 'axios';
 import Image from "next/image";
 import icon1 from "../../../public/assets/Icon1.png";
@@ -7,12 +9,12 @@ import icon2 from "../../../public/assets/Icon2.png";
 import icon3 from "../../../public/assets/Icon3.png";
 import icon4 from "../../../public/assets/Icon4.png";
 import icon5 from "../../../public/assets/Icon5.png";
-import mrugayan from "../../../public/assets/mrugayan.png";
+import mrugayan from "../../../public/assets/Mruganayani-white-logo.png";
 import resorts from "../../../public/assets/resort.jpg";
 import farmland from "../../../public/assets/farmland.jpg";
 import weekend from "../../../public/assets/Weekend-Homes.jpg";
 import family from "../../../public/assets/family.jpg";
-import whyChoose from "../../../public/assets/why-choose.png";
+import whyChoose from "../../../public/assets/kapil-info-final.png";
 import kapil from "../../../public/assets/Kapil-group.png";
 import loc1 from "../../../public/assets/loc-1.png";
 import loc from "../../../public/assets/loc.png";
@@ -72,6 +74,7 @@ interface FormData {
   phonenumber: string;
   email: string;
 }
+
 const NewComponent = () => {
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -85,6 +88,15 @@ const NewComponent = () => {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+
+    if (name === 'phonenumber' && !/^\d*$/.test(value)) {
+      return; // only allow numeric values
+    }
+
+    if (name === 'phonenumber' && value.length > 10) {
+      return; // restrict length to 10 digits
+    }
+
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -96,6 +108,14 @@ const NewComponent = () => {
     setLoading(true);
     setError('');
     setSuccess('');
+
+    // Phone number validation
+    const phoneNumberRegex = /^\d{10}$/;
+    if (!phoneNumberRegex.test(formData.phonenumber)) {
+      setError('Invalid phone number. Please enter a 10-digit phone number.');
+      setLoading(false);
+      return;
+    }
 
     console.log('Form data submitted:', formData);
 
@@ -110,8 +130,6 @@ const NewComponent = () => {
       setSuccess("Form submitted successfully");
 
       // Clear success message after 5 seconds
-
-
     } catch (err: unknown) {
       if (axios.isAxiosError(err)) {
         const message = err.response?.data?.message || 'Failed to submit form. Please try again.';
@@ -141,12 +159,12 @@ const NewComponent = () => {
     
   return (
     <div>
-    <section className="bg-[url('/assets/Home-banner2.jpg')] bg-cover   lg:flex  lg:h-screen bg-center">
+    <section className="bg-[url('/assets/Home-banner2.jpg')] bg-cover   lg:flex  lg:h-screen bg-center" id="contact">
     <div className="lg:w-2/3 lg:px-12 flex items-start">
       <h1 className="  text-white   px-10 lg:text-4xl xl:text-4xl   tracking-wider md:text-3xl sm:text-2xl py-10 ">
         Escape the city with your kids,
         <br />
-        <span className="text-[#bc9d3d]">find home away from home at Mruganayani!!</span>
+        <span className="text-[#bc9d3d]">find home away from home at Mruganayani!</span>
       </h1>
     </div>
     <div className="lg:w-1/3 flex lg:items-start md:justify-center  relative sm:justify-center bg-[#000] ">
@@ -199,7 +217,7 @@ const NewComponent = () => {
       </div>
     </div>
   </section>
-  <section className="mt-5   mx-5">
+  <section className="mt-5   mx-5" id="highlights">
       <h1 className="text-center text-4xl font-bold tracking-wide sm:text-xl">
         Why You Should Consider Farmland at Mruganayani
       </h1>
@@ -210,7 +228,7 @@ const NewComponent = () => {
           <h1 className="text-xl">
             100%
             <br />
-            Clear Title1
+            Clear Title
           </h1>
         </div>
         <div className="flex flex-col items-center text-center z-10">
@@ -248,7 +266,7 @@ const NewComponent = () => {
       </div>
     </section>
     <section
-        className="relative bg-cover bg-center lg:h-screen flex items-center lg:px-10 py-10 mt-10"
+        className="relative bg-cover bg-center lg:h-screen flex items-center lg:px-10 py-10 mt-10" id="projects"
         style={{ backgroundImage: "url('/assets/mango-tree.jpg')" }}
       >
         <div className="absolute inset-0 bg-[#113c22] opacity-60"></div>
@@ -284,21 +302,21 @@ const NewComponent = () => {
               Invest in Mruganayani and  reap rewards that are more 
               valuable than money!
             </h1>
-            <h1 className="text-white lg:text-xl mt-5 text-justify">
+            <h1 className="text-white lg:text-lg mt-5 text-justify">
               Give your kids a break from the concrete jungle and the relentless
               pace of city life. Let them enjoy the chirping of birds and the
               gentle breeze in their hair instead of the honking horns and city
               noise. Introduce them to Mruganayani and watch them bask in the
               purity of nature!
             </h1>
-            <h1 className="text-white lg:text-2xl mt-5 text-justify">
+            <h1 className="text-white lg:text-lg mt-5 text-justify">
               Here, the crunch of city life fades away, and the gentle rustle of
               leaves and fluttering of butterflies become your new companions.
             </h1>
             <div className="flex justify-center">
-            <button className="mt-5 text-white font-3xl bg-green px-10 py-5 rounded-full ">
+            <a href="#contact" className="mt-5 text-white font-3xl bg-green px-10 py-5 rounded-full ">
               BOOK NOW
-            </button>
+            </a>
             </div>
          
           </div>
@@ -308,7 +326,7 @@ const NewComponent = () => {
         </div>
       </div>
       <div
-        className=" relative bg-cover bg-center  flex flex-col items-center mt-10 "
+        className=" relative bg-cover bg-center  flex flex-col items-center mt-10 " id="amenities"
         style={{ backgroundImage: "url('/assets/bg.jpg')" }}
       >
         <h1 className="lg:text-4xl text-dark font-bold">
@@ -320,8 +338,8 @@ const NewComponent = () => {
         <div className="lg:w-1/3">
           <Image src={kapil} alt="logo img " />
         </div>
-        <div className="lg:w-2/3 px-5">
-          <h1 className="text-center  text-3xl font-bold mt-3 sm:text-2xl">Who we are ?</h1>
+        <div className="lg:w-2/3 px-5" id="whoweare">
+          <h1 className="text-center  text-3xl font-bold mt-3 sm:text-2xl">Who We Are ?</h1>
           <p className="text-black lg:text-lg py-5 text-justify ">
             Kapil Group started its journey with chit funds in 1981 and ventured
             into real estate in 1982. Since then, it has expanded into 25
@@ -398,7 +416,7 @@ const NewComponent = () => {
     <section className="mt-10 ">
       <div className=" relative   flex flex-col items-center mt-10 ">
         <h1 className="lg:text-4xl text-dark font-bold text-center">
-        Strategically located in Narayankhed, the high-growth corridor        </h1>
+        Strategically located in Sangareddy, the high-growth corridor        </h1>
         <Image src={map} alt="img" />
       </div>
     
@@ -415,6 +433,7 @@ const NewComponent = () => {
         </div>
       </div>
     </section>
+    <ScrollToTopButton /> {/* Add the ScrollToTopButton here */}
   </div>
   )
 }
