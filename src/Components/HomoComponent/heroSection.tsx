@@ -23,6 +23,15 @@ const HeroSection = () => {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+
+    if (name === 'phonenumber' && !/^\d*$/.test(value)) {
+      return; // only allow numeric values
+    }
+
+    if (name === 'phonenumber' && value.length > 10) {
+      return; // restrict length to 10 digits
+    }
+
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -34,6 +43,14 @@ const HeroSection = () => {
     setLoading(true);
     setError('');
     setSuccess('');
+
+    // Phone number validation
+    const phoneNumberRegex = /^\d{10}$/;
+    if (!phoneNumberRegex.test(formData.phonenumber)) {
+      setError('Invalid phone number. Please enter a 10-digit phone number.');
+      setLoading(false);
+      return;
+    }
 
     console.log('Form data submitted:', formData);
 
