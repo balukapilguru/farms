@@ -1,5 +1,5 @@
 import Image from "next/image";
-import mrugayan from "../.././../public/assets/mrugayan.png";
+import mrugayan from "../.././../public/assets/mrugayan-final-2024.png";
 import icon1 from "../../../public/assets/m-ICON/Frame 16.png";
 import icon2 from "../../../public/assets/m-ICON/Frame 17.png";
 import icon3 from "../../../public/assets/m-ICON/Frame 18.png";
