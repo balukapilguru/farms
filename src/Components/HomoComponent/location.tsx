@@ -1,6 +1,6 @@
 import Image from "next/image";
 import loc1 from "../../../public/assets/loc-1.png";
-import loc from "../../../public/assets/loc-new.png";
+import loc from "../../../public/assets/loc-new-final-2024.png";
 
 const Location = () => {
   return (
