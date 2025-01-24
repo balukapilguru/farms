@@ -3,6 +3,7 @@ import { useState, ChangeEvent, FormEvent, useEffect } from 'react';
 import axios from 'axios';
 import Image from 'next/image';
 import gif from '../../../public/assets/form_bg.gif';
+import mob from '../../../public/assets/mob-emi.png';
 
 interface FormData {
   name: string;
@@ -95,8 +96,21 @@ const HeroSection = () => {
   }, [timeoutId]);
 
   return (
-    <section className="relative h-auto bg-cover bg-center rounded-3xl lg:flex align-items-center mx-5" id="contact" style={{ backgroundImage: `url('/assets/LP-image.png')` }}>
+    <section className="relative h-auto bg-cover bg-center rounded-3xl lg:flex align-items-center mx-5" id="contact" style={{ backgroundImage: `url('/assets/emi-starts.jpg')` }}>
+      <div className="px-8 py-8">
+      <Image
+          src={mob}
+          alt="why"
+          className=" md:w-5/5  sm:w-full lg:hidden sm:hidden md:block"
+        />
+      <Image
+          src={mob}
+          alt="why"
+          className="  md:w-5/5  sm:w-full lg:hidden sm:block md:hidden"
+        />
+      </div>
       <div className="lg:w-1/2 lg:px-12 flex items-end sm:justify-center md:justify-center sm:w-full">
+      
         <h1 className="text-white font-bold px-5 lg:text-2xl xl:text-3xl text-5xl uppercase tracking-wider md:text-3xl sm:text-xl py-8">
           Venture into the land <br />
           of limitless possibilities!!
@@ -105,6 +119,7 @@ const HeroSection = () => {
       <div className="lg:w-1/2 flex lg:justify-end md:items-end relative lg:m-10 sm:justify-center">
         <div className="bg-lightgolden rounded-2xl max-w-[400px] sm:my-5">
           <div className="px-8 py-8">
+          
             <p className="text-center">
               If you are looking to buy farmland in Hyderabad,
             </p>
