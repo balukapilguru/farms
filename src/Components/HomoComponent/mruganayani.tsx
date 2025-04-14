@@ -10,7 +10,9 @@ import bellowBanner from "../../../public/assets/m-ICON/THAJA PANTALU POSTER  88
 const Mruganayani = () => {
   return (
     <>
+    <a href="https://taazapanta.com" target="_blank" rel="noopener noreferrer" >
     <Image src={bellowBanner} alt="Tajapantalu" className="w-[100%] mt-8 border-[10px] rounded-lg"  />
+    </a>
     <section className="mt-10 lg:rounded-full md:px-5 sm:rounded-lg md:rounded-lg shadow-2xl mx-w-75 md:p-10 mx-5" id="highlights">
       
       <div className=" lg:py-8 lg:flex items-center  ">
