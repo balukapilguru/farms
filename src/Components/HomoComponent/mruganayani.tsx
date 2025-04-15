@@ -5,14 +5,16 @@ import icon2 from "../../../public/assets/m-ICON/Frame 17.png";
 import icon3 from "../../../public/assets/m-ICON/Frame 18.png";
 import icon4 from "../../../public/assets/m-ICON/Frame 19.png";
 import icon5 from "../../../public/assets/m-ICON/Frame 20.png";
-import bellowBanner from "../../../public/assets/m-ICON/THAJA PANTALU POSTER  887 BY 190 ENGLISH copy.jpg";
+import bellowBanner from "../../../public/assets/m-ICON/IMG_1442.png";
 
 const Mruganayani = () => {
   return (
     <>
+    <div className="flex justify-center">
     <a href="https://taazapanta.com" target="_blank" rel="noopener noreferrer" >
-    <Image src={bellowBanner} alt="Tajapantalu" className="w-[100%] mt-8 border-[10px] rounded-lg"  />
+    <Image src={bellowBanner} alt="Tajapantalu" className="mt-10"   />
     </a>
+    </div>
     <section className="mt-10 lg:rounded-full md:px-5 sm:rounded-lg md:rounded-lg shadow-2xl mx-w-75 md:p-10 mx-5" id="highlights">
       
       <div className=" lg:py-8 lg:flex items-center  ">
